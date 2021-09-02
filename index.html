@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  
+   <!-- The classes we use in sketch.js should come before sketch.js or here-->
+   <script src="js/game.js"></script>
+   <script src="js/form.js"></script>
+   <script src="js/player.js"></script>
+   <!-- Make sure you add these libraries in index.html -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+  
+  <script>
+  // Replace this with YOUR const firebaseConfig details 
+  // -----------------------------------------------------------
+  const firebaseConfig = {
+    apiKey: "AIzaSyAm-JXc2bFF8VH0p9zhxDxR8rjsgYTL7RE",
+    authDomain: "fruitcatcher-674cf.firebaseapp.com",
+    databaseURL: "https://fruitcatcher-674cf-default-rtdb.firebaseio.com",
+    projectId: "fruitcatcher-674cf",
+    storageBucket: "fruitcatcher-674cf.appspot.com",
+    messagingSenderId: "115965000059",
+    appId: "1:115965000059:web:37dae4332d48c88d8265de"
+  };
+  // -----------------------------------------------------------
+  
+  firebase.initializeApp(firebaseConfig);
+  </script>      
+  
+  
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+<body>
+ 
+  <script src="sketch.js"></script>
+</body></html>
